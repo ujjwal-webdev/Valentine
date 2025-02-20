@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>❤️ My Valentine ❤️</title>
+    <link
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="./img/heart.svg" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <script>
+      window.addEventListener('load', function() {
+        const audio = document.getElementById("myAudio");
+        
+        // Function to play audio
+        function playAudio() {
+          if (audio) {
+            audio.volume = 0.5; // Set volume to 50%
+            audio.currentTime = 40
+            audio.play()
+              .then(() => console.log("Audio started successfully"))
+              .catch((error) => {
+                console.error("Error playing audio:", error);
+                // Show play button if autoplay fails
+                document.getElementById('playButton').style.display = 'block';
+              });
+          }
+        }
+
+        // Try to play automatically
+        playAudio();
+
+        // Make play button functional
+        document.getElementById('playButton').addEventListener('click', playAudio);
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <audio id="myAudio" loop>
+      <source src="IshqHai.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    
+    <button id="playButton" style="display: none; position: fixed; top: 20px; right: 20px; z-index: 1000; padding: 10px 20px; background-color: #ff6b6b; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      Play Music 🎵
+    </button>
+    <div class="container">
+      <div class="one">
+        <h1 class="one">
+          My dearest
+          <span id="name">xyz</span> ❤️
+        </h1>
+        <p class="two" id="greetingText">You make my heart skip a beat...</p>
+      </div>
+      <div class="three">
+        <p>On this special day of love 💝</p>
+      </div>
+      <div class="four">
+        <div class="text-box">
+          <p class="hbd-chatbox">
+            Will you be my Valentine? Every moment with you feels like magic ✨
+          </p>
+          <p class="fake-btn">Send with Love 💌</p>
+        </div>
+      </div>
+      <div class="five">
+        <p class="idea-1">I could write you a simple message...</p>
+        <p class="idea-2">But my heart wanted more.</p>
+        <p class="idea-3">
+          Because you deserve something <strong>extraordinary</strong> 💫
+        </p>
+        <p class="idea-4">You know why?</p>
+        <p class="idea-5">
+          Because you're the one who makes my heart complete
+          <span>❤️</span>
+        </p>
+        <p class="idea-6">
+          <span>I</span>
+          <span>❤️</span>
+          <span>U</span>
+        </p>
+      </div>
+      <div class="six">
+        <img src="img/vector.jpg" alt="" class="girl-dp" id="imagePath" />
+        <div class="wish">
+          <h3 class="wish-hbd">Happy Valentine's Day My Pahadan</h3>
+          <h5 id="wishText">Every love story is beautiful, but ours is my favorite 💑</h5>
+        </div>
+      </div>
+      <div class="seven">
+        <div class="baloons">
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/smiling.svg" />
+          <img src="img/heart.svg" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/heart.svg" />
+        </div>
+      </div>
+      <div class="eight">
+        <svg viewBox="0 0 40 40" xmlns="svg/heart.svg.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+      </div>
+      <div class="nine">
+        <p>Forever yours, with all my love 💝</p>
+        <p id="replay">Click here to feel the love again ❤️</p>
+        <p class="last-smile">💑</p>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script type="text/babel" src="script/main.js"></script>
+</html>
