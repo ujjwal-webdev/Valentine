@@ -298,11 +298,7 @@ body {
   }
 
   .idea-6 span {
-    font-size: 5rem !important;
-  }
-
-  .idea-6 {
-    margin-top: 2rem;
+    font-size: 10rem;
   }
 
   .six .hat {
@@ -321,13 +317,6 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
-  }
-}
-
-/* Add an additional breakpoint for medium-sized screens */
-@media screen and (min-width: 501px) and (max-width: 768px) {
-  .idea-6 span {
-    font-size: 8rem;
   }
 }
 
